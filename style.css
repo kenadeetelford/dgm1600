@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#navbar { 
+    width: 100%;
+display:flex;
+justify-content: flex-end;
+background-color: grey;
+position:fixed;
+}
+.nav-list {
+    display:flex;
+    list-style-type: none;
+    font-size: 2rem;
+    line-height: 400px;
+}
