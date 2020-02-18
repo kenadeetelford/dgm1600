@@ -9,11 +9,12 @@ justify-content: flex-end;
 background-color: grey;
 position:fixed;
 }
+
 .nav-list {
     display:flex;
     list-style-type: none;
     font-size: 2rem;
-    line-height: 400;
+    font-weight: 400;
 }
 .nav-list a {
 display:block;
