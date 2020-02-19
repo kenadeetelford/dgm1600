@@ -9,6 +9,7 @@ display:flex;
 justify-content: flex-end;
 background-color: grey;
 position:fixed;
+font-size:1rem;
 }
 
 .nav-list {
@@ -69,4 +70,7 @@ footer {
     background-color: grey;
     color:white;
 
+}
+a {
+    text-decoration:none;
 }
