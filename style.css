@@ -34,5 +34,12 @@ text-decoration:none;
     background-color: lightseagreen;
 }
 h1, h3 {
-    font-color:white;
+  color:white;
+}
+#project-list {
+    display:flex;
+    justify-content: space-around;
+}
+i {
+    width:
 }
