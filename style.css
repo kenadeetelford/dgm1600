@@ -9,13 +9,12 @@ display:flex;
 justify-content: flex-end;
 background-color: grey;
 position:fixed;
-font-size:1rem;
 }
 
 .nav-list {
 display:flex;
 list-style-type: none;
-font-size: 2rem;
+font-size: 1rem;
  font-weight: 400;
 }
 
