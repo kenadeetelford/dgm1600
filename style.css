@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0px;
     padding:0px;
 }
+
 #navbar { 
 width: 100%;
 display:flex;
@@ -25,7 +26,7 @@ text-decoration:none;
 }
 
 #welcome-section {
-    display: flex;
+display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,13 +34,14 @@ text-decoration:none;
     height: 100vh;
     background-color: lightseagreen;
 }
+
 h1, h3 {
   color:white;
 }
 #project-list {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 i {
-    width:
+    width:60px;
 }
