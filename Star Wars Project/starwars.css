@@ -1,6 +1,6 @@
 :root {
     box-sizing: border-box;
-    background-color: #dfdfdf;
+    background-color:#4a646c;
 }
 
 a > img {
@@ -12,7 +12,20 @@ button {
     height: 3rem;
     border-radius: 10px;
     font-size: larger;
-    background-color: #b9f45a;
-    color: #a7d;
+    background-color: royalblue;
+    color: lightcyan;
     font-weight: 600;
+    border-color: black;
+
+}
+
+h1 {
+color: lightcyan;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+div {
+    text-align: center;
+    padding-bottom: 10px;
 }
