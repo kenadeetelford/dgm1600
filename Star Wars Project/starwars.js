@@ -1,6 +1,6 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
-import { removeChildren, getLastNumber} from '../utils.js'
+import { removeChildren, getLastNumber } from '../utils.js'
 
 let gallery = document.querySelector ('.gallery')
 

@@ -16,7 +16,7 @@ function populateNav(starships) {
     
 shipAnchor.addEventListener('click', event => {
     let shipName = event.target.textContent
-    const foundShip = starships.find( ship.name === shipName )
+    const foundShip = starships.find( ship => ship.name === shipName )
 console.log(foundShip)
     populateShipView(foundShip)
 

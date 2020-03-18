@@ -1,0 +1,45 @@
+:root {
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex; 
+}
+
+.nav {
+    border: solid 2px black;
+    padding-right: 50px;
+    float: right; 
+    margin-right: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font: white; 
+}
+
+li {
+    list-style-type: none;
+    background-color: grey;
+    text-align: left;
+    padding-right: 300px;
+}
+
+body {
+    background-color:grey;
+    align-content: center;
+
+}
+main {
+    float: left;
+    padding-left: 50px;
+}
+
+h1 {
+align-content: center; 
+}
+
+
