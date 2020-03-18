@@ -1,6 +1,6 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
-import { removeChildren, getLastNumber } from '../utils.js'
+import { removeChildren, getLastNumber} from '../utils.js'
 
 let gallery = document.querySelector ('.gallery')
 
@@ -31,12 +31,6 @@ femaleButton.addEventListener('click',function(event) {
 otherButton.addEventListener('click',function(event) {
     populateDOM(otherCharacters)
 })
-
-function removeChildren(element) {
-    while (element.firstChild) {
-        element.removeChild(element.firstChild)
-    }
-}
 
 function populateDOM(characters) {
     removeChildren(gallery)
