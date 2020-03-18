@@ -1,4 +1,4 @@
-import { starships } from '../data/starships.js'
+import { starships } from '../data/starships
 
 constant nav = document.querySelector('.nav')
 
