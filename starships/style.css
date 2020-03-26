@@ -33,6 +33,7 @@ body {
     background-color: grey;
     align-content: center;
     text-align: center; 
+    font: sans-serif;
 
 }
 main {
@@ -50,3 +51,4 @@ footer {
     align-content: center; 
  
 }
+
