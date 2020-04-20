@@ -1,4 +1,4 @@
-export const representatives [
+export const representatives = [
                 {
                     "id": "A000374",
                     "title": "Representative",
@@ -20238,3 +20238,4 @@ export const representatives [
                     "votes_with_party_pct": 95.83
                 }
             ]
+ 
