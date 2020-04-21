@@ -10,20 +10,20 @@ function getPokeData(url) {
   })
 }
 
-getPokedata("https://pokeapi.co/api/v2/pokemon")
+getPokeData("https://pokeapi.co/api/v2/pokemon")
 // https://pokeapi.co/api/v2/pokemon/1/
 
 function populatePokeCards(pokeArray) {
     pokeArray.forEach((pokemon) => {
+    let pokeScene = document.createElement('div')
+    pokeCard.className = 'scene'
     let pokeCard = document.createElement('div')
-    pokeCard.className = 'card'
-    let pokeContent = document.createElement('div')
-    pokeContent.className = 'content'
+    pokeContent.className = 'card'
     let pokeFront = document.createElement('div')
-    pokeFront.className = 'front'
+    pokeFront.className = 'card__face card__face--front'
     pokeFront.textContent = "Front!"
     let pokeBack = document.createElement('div')
-    pokeBack.className = 'back'
+    pokeBack.className = 'card__face card__face--back'
     pokeBack.textContent = "Back!"
 
     pokeContent.appendChild(pokeFront)
