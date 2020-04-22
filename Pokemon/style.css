@@ -1,15 +1,38 @@
+header {
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 30px;
+    background-color: lightskyblue;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-radius: 50px;
+    border: 2px double black;
+
+}
+
+body {
+    background-image: url("../images/pikachu.jpg")
+}
+
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: Tahoma, Geneva, sans-serif;
+
 }
 
 .scene {
     width: 200px;
-    height: 260px;
+    height: 270px;
     border: 1px solid #CCC;
     margin: 10px;
     perspective: 600px;
+    border-radius: 30px;
+    
   }
   
   .card {
@@ -34,21 +57,33 @@
     font-weight: bold;
     font-size: 1.25rem;
     backface-visibility: hidden;
+    border-radius: 20px;
   }
   
   .card__face--front {
-    background: fuchsia;
+    background: darkorange;
+    padding: 5px;
+    color: black;
+    border: 2px double black;
+
   }
   
   .card__face--back {
-    background: blue;
+    background: url(../images/background.png);
     transform: rotateY(180deg);
+    display:flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+    color: black;
+    border: 2px double black;
+
+
   }
   
   #startButton {
-    background-color: grey; 
-    border: none;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -56,7 +91,20 @@
     font-size: 16px;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-
-
+    margin-bottom: 10px;
+    border: 2px double black;
+  
+}
+  #newButton {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px double black;
   }
