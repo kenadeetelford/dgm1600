@@ -30,11 +30,10 @@ getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then(
             getAPIData(pokemon.url).then(
                 (pokeData) => {
                     populatePokeCard(pokeData)
-                }
-            )
-        }
-
-    }
+}
+)
+}
+}
 )
 
 function populatePokeCard(singlePokemon) {
@@ -43,8 +42,9 @@ function populatePokeCard(singlePokemon) {
         let pokeCard = document.createElement('div')
         pokeCard.className = 'card'
         pokeCard.addEventListener('click', function () {
-            pokeCard.classList.toggle('is-flipped');
+            pokeCard.classList.toggle('is-flipped')
         })
+        
         let pokeFront = populateCardFront(singlePokemon)
         let pokeBack = populateCardBack(singlePokemon)
        
@@ -57,12 +57,16 @@ function populatePokeCard(singlePokemon) {
 function populateCardFront(pokeMon) {
     let cardFront = document.createElement('div')
         cardFront.className = 'card__face card__face--front'
-        cardFront.textContent = PokeMon.name
+        cardFront.textContent = `${PokeMon.name} ${pokeMon.id}`
+        let frontImage = document.createElement('img')
+        frontImage.src = '../images/001.png'
+        cardFront.appendChild(frontImage)
         return cardFront
 }
-function populateCardFront(pokeMon) {
+
+function populateCardBack(pokeMon) {
     let cardBack = document.createElement('div')
         cardBack.className = 'card__face card__face--back'
-        cardBack.textContent = 'Back!'
+        cardBack.textContent = pokeMon.stats[0].stat.name
         return cardBack
 }
