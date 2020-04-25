@@ -9,14 +9,16 @@ body {
     line-height: 1.4;
     color: var(--main-white);
     background: black;
+  
   }
   
 #navbar { 
 width: 100%;
 display:flex;
 justify-content: flex-end;
-background-color: grey;
-position:fixed;
+background-color: black
+position: fixed;
+
 }
 
 .nav-list {
@@ -25,6 +27,7 @@ list-style-type: none;
 font-size: 1rem;
  font-weight: 500;
  font: sans-serif;
+ 
 }
 
 .nav-list a {
@@ -33,9 +36,10 @@ font-size: 1.5rem;
 padding: 2rem;
 text-decoration:none;
 color:black;
-font-weight:700;
+font-weight: bolder;
 border-bottom: black;
-background-image: url(../PersonalPortfolio/images/star.webp);
+border: 1px solid black;
+background: #2D806E;
 }
 
 #welcome-section {
@@ -45,7 +49,7 @@ display: flex;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(orange, red);
+    background-image: radial-gradient(#A6FFEC, #538076);
     
 }
 
@@ -56,7 +60,7 @@ h1, h3 {
   
 }
 h1 {
-    font-size: 2.5rem;  
+    font-size: 3.5rem;  
 }
 h3 {
     font-style:italic;
@@ -75,8 +79,6 @@ h3 {
 i {
     font-size:1.5rem;
     margin: 10px; 
-    border-color: white;
-
 }
 
 #contact {
@@ -98,8 +100,9 @@ footer {
     align-items:center;
     font-size: 1.5rem;
     height: 60px;
-    background-color: grey;
-    color:white;
+    background-color:#2D806E;
+    color:black;
+    font-style: italic;
 
 }
 a {
@@ -110,6 +113,7 @@ a {
 img {
   margin: 10px;
   border-radius: 10px;
+  border:5px solid #2D806E;
   
 }
 
