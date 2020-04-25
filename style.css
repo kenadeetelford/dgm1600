@@ -24,7 +24,7 @@ position: fixed;
 .nav-list {
 display:flex;
 list-style-type: none;
-font-size: 1rem;
+font-size: .5rem;
  font-weight: 500;
  font: sans-serif;
  
@@ -35,7 +35,7 @@ display:block;
 font-size: 1.5rem;
 padding: 2rem;
 text-decoration:none;
-color:white;
+color:black;
 font-weight: bolder;
 border-bottom: black;
 border: 1px solid black;
@@ -66,13 +66,16 @@ h3 {
     font-style:italic;
 }
 #project-list {
-  text-align:center; 
+  text-align: center; 
   margin-left: auto;
   margin-right: auto;
   width: 40%;
   display:flex;
   justify-content: space-evenly;
   background-color: black;
+  font-size: 30px;
+  margin-bottom: 27px;
+  margin-top: auto;
     
 }
 
@@ -92,6 +95,7 @@ i {
 
 #contact a {
     text-decoration: none;
+    font-size: 20px
 }
 
 footer {
