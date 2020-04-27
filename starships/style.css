@@ -45,7 +45,7 @@ main {
 
 h1 {
 align-content: center; 
-font: white, sans-serif;
+font:white;
 background: #CA98FF;
 
 }
@@ -54,6 +54,7 @@ footer {
     height: 900px;
     align-content: center; 
     color: white;
+
  
 }
 
