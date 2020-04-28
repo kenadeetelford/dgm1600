@@ -25,3 +25,10 @@ export function addStarField(element, numStars) {
       element.appendChild(star)
     }
   }
+  function getRandomPosition() {
+    let x = document.body.scrollWidth
+    let y = document.body.scrollHeight
+    let randomY = Math.floor(Math.random() * y)
+    let randomX = Math.floor(Math.random() * x)
+    return [randomX, randomY]
+  }
