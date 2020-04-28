@@ -48,11 +48,12 @@ main {
 
 h1 {
 align-content: center; 
-font:white;
-background: #CA98FF;
-margin-top: 20px;
+font:#CA98FF;
+background:white
+margin-top: 0px;
 padding-top: 10px;
 padding-bottom: 10px;
+fo
 
 }
 
@@ -67,7 +68,7 @@ font-size: 10px;
 header {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
+    font-style: italic, bold;
     color: black;
     margin-top: 0px;
 }
