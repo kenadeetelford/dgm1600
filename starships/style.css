@@ -7,9 +7,6 @@
     display: flex; 
 }
 
-.shipView {
-  
-}
 
 .nav {
     background-color: grey;
@@ -27,8 +24,9 @@ a {
 
 li {
     list-style-type: none;
-    background-color: grey;
-    text-align: left;
+    background-color: black;
+    font: white;
+    text-align: center;
     padding-right: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
