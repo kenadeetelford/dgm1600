@@ -8,11 +8,6 @@ loadPage()
 let newButton = document.querySelector('#newButton')
 newButton.addEventListener('click', ()  => {
 addPokemon()
-window.scrollTo({
-    top: pokemonRect.top,
-    left: pokemonRect.left,
-    behavior: 'smooth'
-})
 })
 
 async function getAPIData(url) {
@@ -84,7 +79,7 @@ function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
         cardBack.className = 'card__face card__face--back'
     let abilityList = document.createElement('ul') 
-  abilityList.textContent = 'Abilities:'
+    abilityList.textContent = 'Abilities:'
     pokemon.abilities.forEach(ability => {
         let abilityName= document.createElement('li')
         abilityName.textContent = ability.ability.name
@@ -92,18 +87,16 @@ function populateCardBack(pokemon) {
     })
     let moveList = document.createElement('p')
   moveList.textContent = `Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`
-  
   cardBack.appendChild(abilityList)
   cardBack.appendChild(moveList)
-        return cardBack
+  return cardBack
 }
 
 function getPokemonMoves(pokemon, levelLearnedAt) {
-    return pokemon.moves.filter(move => {
-      return move.version_group_details[0].level_learned_at === levelLearnedAt
-    })
-  }
-    
+  return pokemon.moves.filter(move => {
+    return move.version_group_details[0].level_learned_at === levelLearnedAt
+  })
+}
 
 class Pokemon {
     constructor(height,weight,name, abilities) {
