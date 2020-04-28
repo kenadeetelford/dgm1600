@@ -91,6 +91,11 @@ function populateCardBack(pokemon) {
   })
   let moveList = document.createElement('p')
   moveList.textContent = `Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`
+
+  let speed = document.createElement('p')
+  speed.textContent = `Speed: ${data.stats[0].base_stat}`
+  
+  cardBack.appendChild(speed)
   cardBack.appendChild(abilityList)
   cardBack.appendChild(moveList)
   return cardBack
