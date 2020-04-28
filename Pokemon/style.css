@@ -2,7 +2,7 @@ header {
     flex-direction:column;
     display: flex;
     align-items: center;
-    margin-bottom: auto;
+    margin-bottom: 20px;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 30px;
     background-color: lightskyblue;
