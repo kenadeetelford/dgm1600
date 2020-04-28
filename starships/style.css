@@ -24,10 +24,10 @@ a {
 
 li {
     list-style-type: none;
-    background-color: black;
+    background-color: grey;
     font: white;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -67,6 +67,7 @@ header {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    margin-top: 30px;
+    color: black;
+    margin-top: 0px;
 }
 
