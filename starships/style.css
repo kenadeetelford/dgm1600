@@ -48,9 +48,9 @@ main {
 
 h1 {
 align-content: center; 
-font:#CA98FF;
-background:white;
-margin-top: 20px;
+font:white;
+background:#CA98FF;
+margin-top: 0px;
 padding-top: 10px;
 padding-bottom: 10px;
 
