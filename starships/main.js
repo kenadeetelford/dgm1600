@@ -38,11 +38,5 @@ function populateShipView(shipData) {
     shipView.appendChild(shipImage)
 }
 
-$(document).ready(function(populateShipView) {
-    $('img').bind("error",populateShipView(shipData){
-      // Set the default image
-      $(shipImage).attr("src","../images/lowpoly.jpg");
-    });
-  });
 
 populateNav(starships)

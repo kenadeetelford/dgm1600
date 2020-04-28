@@ -4,8 +4,10 @@ console.log(senators.length)
 
 const container = document.querySelector('.container')
 
-const filter.Senators = (prop, value) => {
-    return senators.filter(senator => senator[prop]=== value)
+const filterSenators = (prop, value) => {
+    return senators.filter(senator => senator[prop] === value)
 }
 
-console.log = senato
+console.log(filterSenators('party','R'))
+console.log(filterSenators('party', 'D'))
+console.log(filterSenators)('party','ID')
