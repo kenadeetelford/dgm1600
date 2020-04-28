@@ -2,7 +2,7 @@ header {
     flex-direction:column;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: auto;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 30px;
     background-color: lightskyblue;
@@ -11,6 +11,7 @@ header {
     border-radius: 50px;
     border: 2px double black;
     text-shadow: 4px 4px #FF0000;
+    padding-bottom: 15px;
 
 }
 
