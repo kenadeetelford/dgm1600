@@ -85,6 +85,7 @@ function populateCardBack(pokemon) {
         abilityName.textContent = ability.ability.name
         abilityList.appendChild(abilityName)
     })
+    
     let moveList = document.createElement('p')
   moveList.textContent = `Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`
   cardBack.appendChild(abilityList)
@@ -110,10 +111,26 @@ class Pokemon {
 }
 
 function addPokemon() {
-let newPokemon = new Pokemon(50, 25, 'Kenmon', [
-    {
-        ability: 
-            { name: 'Lava Breath forming from Solar Power' }
-    }])
-populatePokeCard(newPokemon)
-}
+    let newPokemon = new Pokemon(50, 25, 'Kenmon', [
+      {
+        ability:
+          { name: 'Flame-Throwing' }
+      },
+      {  ability:
+          { name: 'Lava Breathing' }
+      }
+    ],
+      [
+        {
+          move: {
+            name: "Breaking-Wind"
+          },
+          version_group_details: [
+            {
+            level_learned_at: 0
+            }
+          ]
+        }
+      ])
+    return populatePokeCard(newPokemon)
+  }
