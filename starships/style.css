@@ -9,7 +9,7 @@
 
 
 .nav {
-    background-color: grey;
+    background-color: black;
     padding-right: 50px;
     float: right; 
     margin-right: 50px;
@@ -24,11 +24,11 @@ a {
 
 li {
     list-style-type: none;
-    background-color: grey;
+    background-color: black;
     font: white;
    justify-content: center;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
