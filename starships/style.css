@@ -27,7 +27,8 @@ li {
     background-color: grey;
     font: white;
    justify-content: center;
-    padding-right: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
