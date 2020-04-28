@@ -115,19 +115,19 @@ class Pokemon {
 }
 
 function addPokemon() {
-  let newPokemon = new Pokemon(50, 25, 'Thoremon', [
+  let newPokemon = new Pokemon(50, 25, 'Kenmom', [
     {
       ability:
-        { name: 'Thunder Belly' }
+        { name: 'Fire-Spitting' }
     },
     {  ability:
-        { name: 'Lightining Fingers' }
+        { name: 'Lava Breath' }
     }
   ],
     [
       {
         move: {
-          name: "Breaking-Wind"
+          name: "Fire Balls"
         },
         version_group_details: [
           {
