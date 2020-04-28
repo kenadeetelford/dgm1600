@@ -11,7 +11,7 @@ newButton.addEventListener('click', () => {
   window.scrollTo({
     top: pokemonRect.top,
     left: pokemonRect.left,
-    behavior: 'smooth'
+    behavior: 'fast'
   })
 })
 
