@@ -99,7 +99,7 @@ function populateCardBack(pokemon) {
 function getPokemonMoves(pokemon, levelLearnedAt) {
   //console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
   return pokemon.moves.filter(move => {
-    return move.version_group_details[0f].level_learned_at === levelLearnedAt
+    return move.version_group_details[0].level_learned_at === levelLearnedAt
   })
 }
 
