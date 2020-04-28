@@ -42,34 +42,16 @@ function populateContainer(smallSenatorsArray) {
         figCaption.appendChild(partyIcon)
         senFigure.appendChild(figImg)
         senFigure.appendChild(figCaption)
-        senDiv.appendChild(senFigure)
-        senDiv.appendChild(progressBars(senator))
-        container.appendChild(senDiv)
+        container.appendChild(senFigure)
 
     })
 
 }
 
-function progressBars(senator) {
-    let progressDiv = document.createElement('div')
-    progressDiv.className = 'progressDiv'
-    let seniorityLabel = document.createElement('label')
-    seniorityLabel.for = 'seniority'
-    seniorityLabel.textContent = 'Seniority'
-    let seniorityBar = document.createElement('progress')
-    seniorityBar.id = 'seniority'
-    seniorityBar.max = 100
-    seniorityBar.value = parseInt((senator.seniority / mostSeniority.seniority) * 100)
-
-    progressDiv.appendChild(seniorityLabel)
-    progressDiv.appendChild(seniorityBar)
-    return progressDiv
-}
-
 const republicans = filterSenators ('party', 'R')
 const democrats = filterSenators('party', 'D')
 
-const mostSeniority = simplifiedSenators(democrats).reduce(
+const mostSeniority = simplifiedSenators(republicans).reduce(
     (acc, senator) => {
         return acc.seniority > senator.seniority ? acc: senator
     }
@@ -90,6 +72,7 @@ const mostLoyal = simplifiedSenators(senators).reduce((acc,senator) => {
 })
 
 console.log(mostSeniority)
-
+console.log(loyalArray)
+console.log(mostMissedVotes)
 
 populateContainer(simplifiedSenators(senators))
