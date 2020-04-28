@@ -5,6 +5,7 @@
 
 .container {
     display: flex; 
+    margin-top: 20px;
 }
 
 
@@ -49,6 +50,7 @@ main {
 h1 {
 align-content: center; 
 font:white;
+font-weight: bolder;
 background:#CA98FF;
 margin-top: 0px;
 padding-top: 10px;
