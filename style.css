@@ -48,18 +48,18 @@ display: flex;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(rgb(41, 59, 55), #538076);
+    background-image: linear-gradient(white, rgb(41, 59, 55), #2D806E, rgb(41, 59, 55), white);
     
 }
 
 h1, h3 {
   color:white;
-  font-size: 2rem;
+  font-size: 3rem;
   margin:1rem;
   
 }
 h1 {
-    font-size: 3.5rem;  
+    font-size: 5rem;  
 }
 h3 {
     font-style:italic;

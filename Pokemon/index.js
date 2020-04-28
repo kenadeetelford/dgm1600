@@ -78,9 +78,18 @@ function getImageFileName(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
         cardBack.className = 'card__face card__face--back'
-        cardBack.textContent = pokemon.abilities[0].ability.name
+    let abilityList = document.createElement('ul') 
+    pokemon.abilities.forEach(ability => {
+        let abilityName= document.createElement('li')
+        abilityName.textContent = ability.ability.name
+        abilityList.appendChild(abilityName)
+    })
+
+
+    cardBack.appendChild(abilityList)
         return cardBack
 }
+    
 
 class Pokemon {
     constructor(height,weight,name, abilities) {
@@ -96,7 +105,7 @@ function addPokemon() {
 let newPokemon = new Pokemon(50, 25, 'Kenmon', [
     {
         ability: 
-            { name: 'Lava' }
+            { name: 'Lava Breath forming from Solar Power' }
     }])
 populatePokeCard(newPokemon)
 }

@@ -10,11 +10,12 @@ header {
     margin-left: 200px;
     border-radius: 50px;
     border: 2px double black;
+    text-shadow: 4px 4px #FF0000;
 
 }
 
 body {
-    background-image: url("../images/pikachu.jpg")
+    background: url("../images/pokeballs.gif");
 }
 
 .pokeContainer {
@@ -28,7 +29,6 @@ body {
 .scene {
     width: 200px;
     height: 270px;
-    border: 1px solid #CCC;
     margin: 10px;
     perspective: 600px;
     border-radius: 30px;
@@ -61,10 +61,14 @@ body {
   }
   
   .card__face--front {
-    background: darkorange;
+    background: grey;
     padding: 5px;
     color: black;
-    border: 2px double black;
+    border: 2.5px double black;
+    text-decoration: underline; 
+    text-decoration-style: dotted;
+    text-decoration-color: white;
+    text-transform: uppercase;
 
   }
   
@@ -108,3 +112,25 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border: 2px double black;
   }
+ 
+  .footer {
+   align-content: center;
+  margin-top: 100px;
+  margin-left: 525px;
+  }
+
+  audio {
+  cursor: pointer;
+ 
+  }
+  
+ main {
+   text-align: center;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: black;
+  padding-top: 2px;
+  margin-top: 10px;
+ }
