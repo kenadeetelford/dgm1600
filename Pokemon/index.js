@@ -90,7 +90,7 @@ function populateCardBack(pokemon) {
     abilityList.appendChild(abilityName)
   })
   let moveList = document.createElement('p')
-  moveList.textContent = `Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`
+  moveList.textContent = `Level 2 Moves: ${getPokemonMoves(pokemon, 2).length}`
   cardBack.appendChild(abilityList)
   cardBack.appendChild(moveList)
   return cardBack
@@ -99,7 +99,7 @@ function populateCardBack(pokemon) {
 function getPokemonMoves(pokemon, levelLearnedAt) {
   //console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
   return pokemon.moves.filter(move => {
-    return move.version_group_details[0].level_learned_at === levelLearnedAt
+    return move.version_group_details[2].level_learned_at === levelLearnedAt
   })
 }
 
