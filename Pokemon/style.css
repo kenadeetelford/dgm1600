@@ -17,6 +17,7 @@ header {
 
 body {
     background: url("../images/pokeballs.gif");
+    background-size: 100%;
 }
 
 .pokeContainer {
@@ -137,5 +138,6 @@ body {
  
  .audiobar {
  display: flex;
- align-content: center;
+ justify-content: space-evenly;
+
  }
