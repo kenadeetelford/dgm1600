@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding:0px;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Allerta";
@@ -54,12 +55,12 @@ display: flex;
 
 h1, h3 {
   color:white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin:1rem;
   
 }
 h1 {
-    font-size: 5rem;  
+    font-size: 4rem;  
 }
 h3 {
     font-style:italic;

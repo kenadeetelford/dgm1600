@@ -37,6 +37,7 @@ li {
 
 body {
     background: url(../images/galaxy.webp);
+    background-size: 40%;
     align-content: center;
     text-align: center; 
     font: sans-serif;
@@ -64,7 +65,9 @@ footer {
     align-content: center; 
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5px;
+    background-color: #CA98FF;
+    font-size: 20px;
+    margin-top: 50px;
  
 }
 

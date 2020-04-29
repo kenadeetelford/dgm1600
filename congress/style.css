@@ -54,9 +54,3 @@ figcaption {
 .fa-star {
     color: rgb(131, 131, 3);
 }
-
-.progressDiv {
-    display:flex;
-    flex-direction: column;
-    margin-left: 40px;
-}
